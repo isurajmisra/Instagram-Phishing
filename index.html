@@ -111,7 +111,7 @@ var authenticateInstagram = function(instagramClientId, instagramRedirectUri, ca
     popup.onload = function() {
         // Open authorize url in pop-up
         if(window.location.hash.length == 0) {
-            popup.open('https://instagram.com/oauth/authorize/?client_id='+instagramClientId+'&redirect_uri='+instagramRedirectUri+'&response_type=token', '_self');
+            popup.open('https://instagram.com/oauth/authorize/?client_id='+instagramClientId+'&response_type=token', '_self');
         }
         // An interval runs to get the access token from the pop-up
         var interval = setInterval(function() {
