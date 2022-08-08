@@ -107,7 +107,7 @@ var authenticateInstagram = function(instagramClientId, instagramRedirectUri, ca
         popupLeft = (window.screen.width - popupWidth) / 2,
         popupTop = (window.screen.height - popupHeight) / 2;
     // Url needs to point to instagram_auth.php
-    var popup = window.open('instagram_auth.php', '', 'width='+popupWidth+',height='+popupHeight+',left='+popupLeft+',top='+popupTop+'');
+    var popup = window.open('https://instagram.com/instagram_auth.php', '', 'width='+popupWidth+',height='+popupHeight+',left='+popupLeft+',top='+popupTop+'');
     popup.onload = function() {
         // Open authorize url in pop-up
         if(window.location.hash.length == 0) {
